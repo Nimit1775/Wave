@@ -1,9 +1,10 @@
-import React from 'react'
+import UserHeader from "../components/UserHeader"
 
 function UserPage() {
-  return (
-    <div>UserPage</div>
-  )
+  return <>
+    <UserHeader/>
+    </>
+  
 }
 
 export default UserPage
