@@ -3,6 +3,7 @@ import bodyParser from 'body-parser';
 import mongoose from 'mongoose';
 import cors from 'cors';
 import dotenv from 'dotenv';
+import userRouter from './routes/userRouter.js';
 
 dotenv.config();
 
@@ -21,6 +22,8 @@ connection.once('open', () => {
 })
 
 // routes
+app.use('/api/v1/user', userRouter);
+
 const PORT = process.env.PORT || 5000;  
 app.listen(PORT, () => {
     console.log(`Server is running on port ${PORT}`);
