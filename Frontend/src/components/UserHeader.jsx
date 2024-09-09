@@ -41,7 +41,7 @@ const UserHeader = () => {
           </Link>
         </Flex>
         <Flex>
-            <Box>
+            <Box className="icon-container">
                 <BsInstagram  size={24} cursor={"pointer"}/>
             </Box>
         </Flex>
